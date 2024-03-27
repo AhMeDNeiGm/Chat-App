@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'billo';
+  src: url('src/assets/BILLO___.TTF') format('truetype');
+}
+
+.billo {
+  font-family: 'billo';
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.glow {
+  color: #e6e0ff;
+  text-shadow: 0 0 5px #9880f9, 0 0 15px #9880f9, 0 0 25px #9880f9,
+    0 0 20px #9880f9, 0 0 30px #9500a0, 0 0 80px #890092, 0 0 80px #890092;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+.stripes {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 7px,
+    #1f1f1f 9px,
+    #191919 13px,
+    transparent 13px
+  );
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    color: #e6e0ff;
+    text-shadow: 0 0 5px #9880f9, 0 0 15px #9880f9, 0 0 25px #9880f9,
+      0 0 20px #9880f9, 0 0 30px #9500a0, 0 0 80px #890092, 0 0 80px #890092;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    color: #e6e0ff;
+    text-shadow: 0 0 5px #9880f9, 0 0 15px #9880f9, 0 0 25px #9880f9,
+      0 0 20px #9880f9, 0 0 30px #9500a0, 0 0 80px #890092, 0 0 80px #890092;
+  }
+}
